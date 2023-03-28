@@ -83,6 +83,10 @@ export default defineType({
       type: 'seo.shopify',
       group: 'seo',
     }),
+    defineField({
+      type: 'shopify.asset',
+      name: 'Testing_Shopify_Asset',
+    }),
   ],
   orderings: [
     {

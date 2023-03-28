@@ -31,6 +31,7 @@
     "sanity": "^3.0.0",
     "sanity-plugin-hotspot-array": "^1.0.0",
     "sanity-plugin-media": "^2.0.2",
+    "sanity-plugin-shopify-assets": "^1.1.0",
     "slug": "^8.2.2",
     "styled-components": "^5.2.0"
   },

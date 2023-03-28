@@ -10,6 +10,9 @@ import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 import {customDocumentActions} from './plugins/customDocumentActions'
 
+// https://github.com/sanity-io/sanity-plugin-shopify-assets
+import {shopifyAssets} from 'sanity-plugin-shopify-assets'
+
 const devOnlyPlugins = [visionTool()]
 
 export default defineConfig({
@@ -26,6 +29,9 @@ export default defineConfig({
     customDocumentActions(),
     media(),
     ...(isDev ? devOnlyPlugins : []),
+    shopifyAssets({
+      shopifyDomain: 'frank-and-oak-demo.myshopify.com',
+    }),
   ],
 
   schema: {
